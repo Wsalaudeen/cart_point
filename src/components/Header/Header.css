@@ -89,7 +89,7 @@
   }
 
   .navbar-elements a:focus {
-    outline: 3px solid #005bd3;
+    outline: 3px solid #323232;
     outline-offset: 1px;
   }
 }
