@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <nav className="header" role="navigation" aria-label="Main Navigation">
       <div className="logo">
-        <h1>CartPoint</h1>
+        <h1>QuickCart</h1>
       </div>
       <div className="menu-icon">
         <Hamburger
