@@ -1,0 +1,111 @@
+/* Header.css */
+
+/* General styles for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Monoton";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 30px;
+  /* font-weight: 500px; */
+  /* padding: 2.4rem 0; */
+}
+
+/* Styles for the hamburger menu icon */
+.menu-icon {
+  display: none; /* Hidden by default, visible on smaller screens */
+}
+
+/* Styles for navigation links */
+.navbar-elements {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-elements a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Focus and hover states for better accessibility */
+.navbar-elements a:focus,
+.navbar-elements a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Cart icon styling */
+.cart {
+  position: relative;
+}
+
+.cart a {
+  color: white;
+}
+
+/* Responsive design: show hamburger menu and hide navigation links on smaller screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-elements {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .navbar-elements.active {
+    display: flex;
+  }
+}
+
+/* Hamburger menu button styles */
+.hamburger {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  color: white;
+}
+
+.hamburger:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* Optional: custom styles for the hamburger-react component */
+.hamburger-react .hamburger-box {
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger-react .hamburger-inner,
+.hamburger-react .hamburger-inner::before,
+.hamburger-react .hamburger-inner::after {
+  background-color: white;
+}
+
+.hamburger-react.is-active .hamburger-inner,
+.hamburger-react.is-active .hamburger-inner::before,
+.hamburger-react.is-active .hamburger-inner::after {
+  background-color: white;
+}
