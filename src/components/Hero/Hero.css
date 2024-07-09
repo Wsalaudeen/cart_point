@@ -1,0 +1,64 @@
+/* Hero css */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 80px;
+  height: auto;
+  background-color: #1a1a1a;
+  /* margin-top: 60px; */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: "Monoton";
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2;
+  color: #dbdbdb;
+  text-wrap: balance;
+  padding: 0.5rem;
+}
+
+/* .hero-content {
+  margin-bottom: 20px;
+} */
+
+.hero-content p {
+  font-size: 2rem;
+  color: #dbdbdb;
+  font-weight: 400;
+  font-family: "Quicksand";
+  word-wrap: balance;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #656266;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #dbdbdb;
+  font-family: "Quicksand";
+  font-size: 2rem;
+  font-weight: 400;
+}
+.cta-button:hover {
+  background-color: transparent;
+  color: #dbdbdb;
+}
+
+.cta-button:focus {
+  outline: 2px solid #323232;
+  outline-offset: 2px;
+}
+
+.hero-carousel {
+  width: 80%;
+  margin-top: 20px;
+}
