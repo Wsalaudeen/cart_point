@@ -33,6 +33,45 @@ const starFocusStyles = {
   outline: "1px solid yellow",
 };
 
+function Star({
+  isFilled,
+  onMouseEnter,
+  onMouseLeave,
+  onClick,
+  onKeyDown,
+  onFocus,
+  onBlur,
+  isFocused,
+  ariaLabel,
+  ariaPressed,
+}) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      style={isFocused ? starFocusStyles : starsStyles}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
+      onKeyDown={onKeyDown}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      tabIndex="0"
+      role="button"
+      aria-label={ariaLabel}
+      aria-pressed={ariaPressed}
+      focusable="true"
+    >
+      <path
+        fill={isFilled ? "yellow" : "none"}
+        stroke="yellow"
+        strokeWidth="2"
+        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+      />
+    </svg>
+  );
+}
+
 function Rating() {
   const initialRating = 0; // Initial rating value
   const [currentRating, setCurrentRating] = useState(initialRating); // state to store the selected rating
@@ -105,42 +144,3 @@ function Rating() {
   );
 }
 export default Rating;
-
-function Star({
-  isFilled,
-  onMouseEnter,
-  onMouseLeave,
-  onClick,
-  onKeyDown,
-  onFocus,
-  onBlur,
-  isFocused,
-  ariaLabel,
-  ariaPressed,
-}) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      style={isFocused ? starFocusStyles : starsStyles}
-      onMouseEnter={onMouseEnter} // Mouse enter event handler
-      onMouseLeave={onMouseLeave} // Mouse leave event handler
-      onClick={onClick} // Click event handler
-      onKeyDown={onKeyDown} // Key down event handler
-      onFocus={onFocus} // focus event handler
-      onBlur={onBlur} // Blur event handler
-      tabIndex="0" // Make the star focusable
-      role="button" // ARIA role for accessibility
-      aria-label={ariaLabel} // ARIA label for accessibility
-      aria-pressed={ariaPressed} // ARIA pressed state for accessibility
-      focusable="true" // Ensure the star is focusable
-    >
-      <path
-        fill={isFilled ? "yellow" : "none"} // Fill the star if it's selected
-        stroke="yellow"
-        strokeWidth="2"
-        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-      />
-    </svg>
-  );
-}

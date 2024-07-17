@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Products from "./components/Products/Products";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
-        <Products />
+        <Footer />
       </BrowserRouter>
     </>
   );
