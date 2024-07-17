@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carousel from "../../Data/carousel";
+
 const Hero = () => {
   const carouselSettings = {
     dots: true,
@@ -53,5 +54,4 @@ const Hero = () => {
     </section>
   );
 };
-
 export default Hero;

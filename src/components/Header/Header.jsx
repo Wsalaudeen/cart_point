@@ -103,7 +103,7 @@ const Header = () => {
 
         <div className="cart">
           <NavLink
-            to="cart"
+            to="/cart"
             aria-label="shopping Cart"
             role="menuitem"
             tabIndex={isOpen ? 0 : -1}

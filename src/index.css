@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@400;500&display=swap");
 
 /* css variables */
-
 body {
   font-size: calc(0.75em + 1vmin);
   font-family: "Quicksand";
@@ -17,6 +16,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
 html {
   font-size: 62.5%;
 }
