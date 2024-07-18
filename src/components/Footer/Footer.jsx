@@ -6,13 +6,13 @@ function Footer() {
   return (
     <footer className="footer" role="contentinfo" aria-label="Footer">
       <div className="footer-extras">
-        <section className="footer-extra" aria-labelledby="Need-help -heading">
+        <section className="footer-extra" aria-labelledby="Need-help-heading">
           <h2 id="Need-help-heading" className="footer-heading">
             Need Help?
           </h2>
           <ul>
             <li>
-              <a href="/getting-started" aria-label="Getting started">
+              <a href="/getting-started" aria-label="Chat with us">
                 Chat with us
               </a>
             </li>
@@ -22,7 +22,9 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="/server-status">Contact us</a>
+              <a href="/contact us" aria-label="Contact us">
+                Contact us
+              </a>
             </li>
           </ul>
         </section>
